@@ -1,0 +1,1 @@
+0 2 * * * tar -czf /root/home.tar.gz /root/home

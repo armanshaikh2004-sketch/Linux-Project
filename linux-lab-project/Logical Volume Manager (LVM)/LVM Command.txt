@@ -1,0 +1,5 @@
+pvcreate /dev/sdb2
+vgcreate vg2 /dev/sdb2
+lvcreate -L 1G -n lv2 vg2
+mkfs.ext4 /dev/vg2/lv2
+mount /dev/vg2/lv2 /mnt
